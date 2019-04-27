@@ -40,9 +40,10 @@ class Solution:
         m = current
         for i in range(1, len(nums)):
             if current < 0:
-                #judge single negative value, menwhile there is no way for a subarray with two negative items.
+                #judge single negative value, meanwhile there is no way for a subarray with two negative items.
                 current = 0
             current += nums[i]
             m = max(current, m)
         return m
+
 
