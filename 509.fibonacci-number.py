@@ -57,5 +57,20 @@
 #
 class Solution:
     def fib(self, N: int) -> int:
-        msg = "Hello W
+        """
+        :type N: int
+        :rtype: int
+        """
+        pre = 0
+        prepre = 1 
+        sum = 0
+        for fibonacci in range(N):
+            fibonacci = pre
+            sum = fibonacci + prepre
+            prepre = pre
+            pre = sum
+        return sum
+
+
+
 
