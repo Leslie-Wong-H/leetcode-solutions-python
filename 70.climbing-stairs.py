@@ -30,8 +30,7 @@ class Solution:
             product2 = 1
             product3 = 1
         count += 1
-        return int(count)   
-                
+        return int(count)               
             
                 
 
