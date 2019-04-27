@@ -78,9 +78,7 @@ class Solution:
             temp = list(num)
             num = ""
         
-        num = "".join(temp)
-        
-        
+        num = "".join(temp)    
         return num
                     
 
