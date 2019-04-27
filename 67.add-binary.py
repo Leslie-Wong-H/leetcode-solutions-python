@@ -30,46 +30,42 @@
 #
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
-        # if a == "0" and b == "0":
-        #     return "0"
-        # if a == "0" and b != "0":
-        #     return b
-        # if a != "0" and b == "0":
-        #     return a 
+        if a == "0" and b == "0":
+            return "0"
+        if a == "0" and b != "0":
+            return b
+        if a != "0" and b == "0":
+            return a 
         
-        # a = a[::-1]
-        # a_list = list(a)
-        # b = b[::-1]
-        # b_list = list(b)
-        # a_value = 0
-        # b_value = 0
+        a = a[::-1]
+        a_list = list(a)
+        b = b[::-1]
+        b_list = list(b)
+        a_value = 0
+        b_value = 0
 
-        # for index, value in enumerate(a_list):
-        #     a_value += int(value) * (2 ** index)
+        for index, value in enumerate(a_list):
+            a_value += int(value) * (2 ** index)
 
-        # for index, value in enumerate(b_list):
-        #     b_value += int(value) * (2 ** index)
+        for index, value in enumerate(b_list):
+            b_value += int(value) * (2 ** index)
 
-        # sum = a_value + b_value
+        sum = a_value + b_value
 
-        # sum_list = []
+        sum_list = []
 
-        # divide = int(sum / 2)
+        divide = int(sum / 2)
 
-        # while divide > 0:
-        #     item = sum % 2
-        #     sum = sum // 2
-        #     sum_list.append(str(item))
-        #     divide = int(divide / 2)
+        while divide > 0:
+            item = sum % 2
+            sum = sum // 2
+            sum_list.append(str(item))
+            divide = int(divide / 2)
         
-        # if sum % 2 == 1 and int (sum / 2) == 0:
-        #     sum_list.append('1')
+        if sum % 2 == 1 and int (sum / 2) == 0:
+            sum_list.append('1')
         
-        # sum_str = "".join(sum_list[::-1])
+        sum_str = "".join(sum_list[::-1])
 
-        # return sum_str
-        return bin(int(a,2)+int(b,2))[2:]
-
-
-
+        return sum_str
 
