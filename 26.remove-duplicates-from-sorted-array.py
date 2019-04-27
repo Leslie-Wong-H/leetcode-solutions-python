@@ -74,4 +74,5 @@ class Solution:
         del nums[i + 1: len(nums)]
 
         return len(nums)
+        
 
