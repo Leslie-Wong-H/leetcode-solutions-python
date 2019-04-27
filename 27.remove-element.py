@@ -79,5 +79,6 @@ class Solution:
         
         del nums[:i]
         return len(nums)
+        
     
 
