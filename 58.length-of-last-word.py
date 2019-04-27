@@ -40,6 +40,5 @@ class Solution:
         for word in s_split[::-1]:
             if len(word) > 0:
                 return len(word)
-        
         return 0 
 
