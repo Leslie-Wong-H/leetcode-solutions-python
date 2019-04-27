@@ -52,9 +52,7 @@ class Solution:
                 temp = digits[num]*(10**(i-num-1))
                 sum += temp
         sum += digits[i - 1]
-        
         sum += 1
-        
         new_list = [int(x) for x in str(sum)]      
         return new_list
         
