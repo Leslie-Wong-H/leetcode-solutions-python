@@ -39,5 +39,6 @@ class Solution:
         for index, value in enumerate(nums):
             sub = target - value
             if sub in nums[index+1:]:
-                return [index,nums[index+1:].index(sub)+len(nums[:index+1])]
+                return [index, nums[index + 1 :].index(sub) + len(nums[: index + 1])]
+                
         
