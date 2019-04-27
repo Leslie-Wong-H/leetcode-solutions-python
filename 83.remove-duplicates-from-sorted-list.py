@@ -30,7 +30,3 @@ class Solution:
                 newcurrent = newcurrent.next
         return newHead.next
 
-
-
-
-
