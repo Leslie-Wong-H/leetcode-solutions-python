@@ -59,6 +59,7 @@ class Solution:
             common += temp[i]
 
         return common
+        
 
         
 
