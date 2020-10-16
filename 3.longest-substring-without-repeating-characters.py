@@ -1,7 +1,7 @@
 #
-# @lc app=leetcode.cn id=3 lang=python3
+# @lc app=leetcode id=3 lang=python3
 #
-# [3] 无重复字符的最长子串
+# [3] Longest Substring Without Repeating Characters
 #
 
 # @lc code=start
@@ -39,3 +39,5 @@ class Solution:
             characterDictionary = {}
         return max(lengthInfoList)
 # @lc code=end
+# @lc code=end
+
