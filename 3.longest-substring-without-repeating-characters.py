@@ -9,7 +9,6 @@
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-
         listifyString = list(s)
         characterDictionary = {}
         lengthInfoList = []
